@@ -1,6 +1,5 @@
-from SudokuSolver import SudokuOperationProvider
-import copy
-from SudokuDifficultyEnum import  SudokuDifficultyEnum
+from sudokuSolver.SudokuSolver import SudokuOperationProvider
+from sudokuSolver.SudokuDifficultyEnum import SudokuDifficultyEnum
 
 sudoku = SudokuOperationProvider()
 #sudoku.generateSolvedSudoku(100, 2)

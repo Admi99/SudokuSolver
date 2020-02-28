@@ -1,8 +1,8 @@
 import random
 import copy
 
-from DoublePoint import DoublePoint
-from Point import Point
+from sudokuSolver.DoublePoint import DoublePoint
+from sudokuSolver.Point import Point
 
 class SudokuOperationProvider:
     sudokuArrLenght = 9

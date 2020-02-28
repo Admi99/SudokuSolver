@@ -1,5 +1,3 @@
-import Point
-
 class DoublePoint:
 
     def __init__(self, point1, point2):
