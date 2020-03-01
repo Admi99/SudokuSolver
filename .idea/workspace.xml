@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b318418e-90c7-4884-abc1-b102c77a1525" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sudokuConsoleController/SudokuConsoleController.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sudokuConsoleController/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sudokuSolver/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuVisualController/Button.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuVisualController/SudokuVisualController.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuVisualController/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoublePoint.py" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuSolver/DoublePoint.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Point.py" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuSolver/Point.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuDifficultyEnum.py" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuSolver/SudokuDifficultyEnum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver.py" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuSolver/SudokuSolver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestingFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuSolver/TestingFile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuConsoleController/SudokuConsoleController.py" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuConsoleController/SudokuConsoleController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuSolver/SudokuDifficultyEnum.py" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuSolver/SudokuDifficultyEnum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuSolver/SudokuSolver.py" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuSolver/SudokuOperationProvider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuSolver/TestingFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuSolver/TestingFile.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,29 +22,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sudokuSolver/TestingFile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="170">
+              <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sudokuConsoleController/SudokuConsoleController.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="443">
+              <caret line="40" column="45" lean-forward="true" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
               <folding>
-                <element signature="e#0#48#0" expanded="true" />
+                <element signature="e#0#72#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/codecs.py">
+        <entry file="file://$PROJECT_DIR$/sudokuSolver/SudokuOperationProvider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="309" selection-start-line="309" selection-end-line="309" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sudokuSolver/SudokuSolver.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+            <state relative-caret-position="324">
+              <caret line="156" column="65" selection-start-line="156" selection-start-column="65" selection-end-line="156" selection-end-column="65" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -55,20 +53,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sudokuConsoleController/SudokuConsoleController.py">
+        <entry file="file://$PROJECT_DIR$/sudokuVisualController/SudokuVisualController.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+            <state relative-caret-position="242">
+              <caret line="94" column="43" selection-start-line="94" selection-start-column="43" selection-end-line="94" selection-end-column="43" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#0#72#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sudokuConsoleController/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/graphics/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="554" selection-start-line="554" selection-end-line="554" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sudokuVisualController/Button.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -79,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sudokuSolver/SudokuDifficultyEnum.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="26" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="26" />
+            <state relative-caret-position="51">
+              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -89,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/sudokuSolver/DoublePoint.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="17" lean-forward="true" selection-start-column="6" selection-end-column="17" />
+              <caret column="17" selection-start-column="6" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -116,6 +127,8 @@
     <findStrings>
       <find>isPossible</find>
       <find>isSudocuSolved</find>
+      <find>isPossi</find>
+      <find>entr</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -134,7 +147,12 @@
         <option value="$PROJECT_DIR$/SudokuSolver/TestingFile.py" />
         <option value="$PROJECT_DIR$/SudokuSolver/SudokuSolver.py" />
         <option value="$PROJECT_DIR$/sudokuSolver/SudokuSolver.py" />
+        <option value="$PROJECT_DIR$/sudokuSolver/SudokuDifficultyEnum.py" />
         <option value="$PROJECT_DIR$/sudokuConsoleController/SudokuConsoleController.py" />
+        <option value="$PROJECT_DIR$/sudokuSolver/TestingFile.py" />
+        <option value="$PROJECT_DIR$/sudokuVisualController/Button.py" />
+        <option value="$PROJECT_DIR$/sudokuSolver/SudokuOperationProvider.py" />
+        <option value="$PROJECT_DIR$/sudokuVisualController/SudokuVisualController.py" />
       </list>
     </option>
   </component>
@@ -150,7 +168,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -170,13 +187,27 @@
             </path>
             <path>
               <item name="Sudorator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sudorator" type="462c0819:PsiDirectoryNode" />
+              <item name="sudokuVisualController" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sudorator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sudorator" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sudorator" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -196,7 +227,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.SudokuConsoleController">
+  <component name="RunManager" selected="Python.SudokuVisualController">
     <configuration name="SudokuConsoleController" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Sudorator" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -218,7 +249,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="SudokuSolver" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="SudokuVisualController" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Sudorator" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -226,11 +257,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sudokuVisualController" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Adam\PycharmProjects\Sudorator\SudocuSolver.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sudokuVisualController/SudokuVisualController.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -252,6 +283,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SudokuSolver/TestingFile.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestingFile (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Sudorator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sudokuSolver" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sudokuSolver/TestingFile.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -283,10 +335,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.SudokuVisualController" />
+        <item itemvalue="Python.TestingFile (2)" />
         <item itemvalue="Python.SudokuConsoleController" />
         <item itemvalue="Python.TestingFile (1)" />
         <item itemvalue="Python.TestingFile" />
-        <item itemvalue="Python.SudokuSolver" />
       </list>
     </recent_temporary>
   </component>
@@ -314,13 +367,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.312961" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3575298" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3575298" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39761648" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -336,6 +390,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/sudokuVisualController/SudokuVisualController.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -344,22 +405,36 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="gridLenght" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/SudocuSolver.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
+        <state relative-caret-position="5236">
           <caret line="309" selection-start-line="309" selection-end-line="309" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sudokuSolver/DoublePoint.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/curses/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" lean-forward="true" selection-start-column="6" selection-end-column="17" />
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#224#245#0" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuVisualController/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuConsoleController/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/sudokuSolver/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -371,42 +446,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuSolver/DoublePoint.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuSolver/SudokuDifficultyEnum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sudokuSolver/TestingFile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="170">
+          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/graphics/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="554" selection-start-line="554" selection-end-line="554" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuVisualController/Button.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuConsoleController/SudokuConsoleController.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="40" column="45" lean-forward="true" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#0#72#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sudokuSolver/SudokuSolver.py">
+    <entry file="file://$PROJECT_DIR$/sudokuSolver/SudokuOperationProvider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        <state relative-caret-position="324">
+          <caret line="156" column="65" selection-start-line="156" selection-start-column="65" selection-end-line="156" selection-end-column="65" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sudokuConsoleController/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sudokuSolver/SudokuDifficultyEnum.py">
+    <entry file="file://$PROJECT_DIR$/sudokuVisualController/SudokuVisualController.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sudokuConsoleController/SudokuConsoleController.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+        <state relative-caret-position="242">
+          <caret line="94" column="43" selection-start-line="94" selection-start-column="43" selection-end-line="94" selection-end-column="43" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#72#0" expanded="true" />
           </folding>
         </state>
       </provider>

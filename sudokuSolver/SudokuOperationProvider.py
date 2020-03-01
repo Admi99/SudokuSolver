@@ -22,6 +22,7 @@ class SudokuOperationProvider:
             for j in range(0, self.sudokuArrLenght):
                 column.append(appendedValueToCell)
             self.sudokuGrid.append(column)
+            self.solvedSudokuGrid.append(column)
             column = []
 
     def _prepareCoordinatesLimits(self):
@@ -32,7 +33,7 @@ class SudokuOperationProvider:
         for i in range(0, self.sudokuArrLenght):
             self.coordinatesRangeInEachStep.append(DoublePoint(Point(x1[i], y1[i]), Point(x2[i], y2[i])))
 
-    def _isPossible(self, col, row, number):
+    def isPossible(self, col, row, number):
         return self._isColumnAndRowPossible(col, row, number) \
                and self._isCellLocationPossible(col, row, number)
 
@@ -74,7 +75,7 @@ class SudokuOperationProvider:
             for j in range(self.sudokuArrLenght):
                 if self.sudokuGrid[i][j] == 0:
                     for n in range(1, 10):
-                        if self._isPossible(i, j, n):
+                        if self.isPossible(i, j, n):
                             self.sudokuGrid[i][j] = n
                             self._solve()
                             if not self.isSudocuSolved():
@@ -89,7 +90,7 @@ class SudokuOperationProvider:
             while counter != randomCounter:
                 randPositionX = random.randint(0, includedColumnsForRndGen)
                 randPositionY = random.randint(0, self.sudokuArrLenght - 1)
-                if self._isPossible(randPositionX, randPositionY, currentNumber):
+                if self.isPossible(randPositionX, randPositionY, currentNumber):
                     self.sudokuGrid[randPositionX][randPositionY] = currentNumber
                 currentNumber += 1
                 if currentNumber == 10:
@@ -105,7 +106,6 @@ class SudokuOperationProvider:
                 if self.sudokuGrid[i][j] == 0:
                     return False
         return True
-
 
     def printSudoku(self):
         for row in self.sudokuGrid:
@@ -128,6 +128,8 @@ class SudokuOperationProvider:
         return copy.deepcopy(self.solvedSudokuGrid)
 
     def generateSudoku(self, difficultyScale, randomCounter, includedColumnsForRndGen):
+
+        self._setCellsToZero()
         self._generateSolvedSudoku(randomCounter, includedColumnsForRndGen)
         self.solvedSudokuGrid = self.getSudokuGridDeepCopy()
         difficultyNum = pow(self.sudokuArrLenght, 2) - self._loadAndComputeDiffucultyByChoice(difficultyScale)
@@ -149,10 +151,10 @@ class SudokuOperationProvider:
             counter -= 1
         return
 
-    def checkIfSolved(self, solvedSudokuArr):
+    def checkIfSolved(self):
         for i in range(0, self.sudokuArrLenght):
             for j in range(0, self.sudokuArrLenght):
-                if self.sudokuGrid[i][j] != solvedSudokuArr[i][j]:
+                if self.sudokuGrid[i][j] != self.solvedSudokuGrid[i][j]:
                     return False
         return True
 
@@ -161,3 +163,9 @@ class SudokuOperationProvider:
         limitMin = self.difficultyRangeValue[difficultyScale.value - 1].getPointX1()
         limitMax = self.difficultyRangeValue[difficultyScale.value - 1].getPointX2()
         return random.randint(limitMin, limitMax)
+
+    def _setCellsToZero(self):
+        for i in range(0, self.sudokuArrLenght):
+            for j in range(0, self.sudokuArrLenght):
+                self.sudokuGrid[i][j] = 0
+                self.solvedSudokuGrid[i][j] = 0
