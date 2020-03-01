@@ -87,8 +87,8 @@ def setHorLinesForGrid(win):
     line5Hor.draw(win)
     line6Hor.draw(win)
     line7Hor.draw(win)
-    line8Hor.draw(win)
     line9Hor.draw(win)
+    line8Hor.draw(win)
     line10Hor.draw(win)
 
 def setVerLinesForGrid(win):
