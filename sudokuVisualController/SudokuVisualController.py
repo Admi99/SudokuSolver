@@ -15,13 +15,23 @@ def main():
     win.setBackground("azure1")
 
 
-    btn = Button(win, Point(100, 515), 50, 50, "Exit")
-    btn.activate()
+    btnCheck = Button(win, Point(67, 515), 70, 40, "Check")
+    btnReset = Button(win, Point(150, 515), 70, 40, "Reset")
+    btnGen = Button(win, Point(234, 515), 70, 40, "Generate")
+    btnDiff = Button(win, Point(323, 515), 80, 40, "Difficulty")
+    btnCheck.activate()
+    btnReset.activate()
+    btnGen.activate()
+    btnDiff.activate()
+
+    diffText = Text(Point(415, 515), SudokuDifficultyEnum.pathetic.name)
+    diffText.draw(win)
 
     setHorLinesForGrid(win)
     setVerLinesForGrid(win)
     counter = 0
     entryText = []
+    #Je nutne toto umistit do funkce a zavolat po kazdem kliknuti na tlacitko generate
     for x in range(1, gridLenght + 1):
         for y in range(1, gridLenght + 1):
             if sudoku.getSudokuGrid()[x-1][y-1] != 0:
@@ -34,12 +44,22 @@ def main():
 
     while True:
         clickPoint = win.getMouse()
-        if btn.clicked(clickPoint):
-            fillSudokuFromInput(sudoku, entryText)
+        if btnCheck.clicked(clickPoint):
+            if not fillSudokuFromInput(sudoku, entryText):
+                continue
             if sudoku.checkIfSolved():
                 win.setBackground("Green")
             else:
                 win.setBackground("Red")
+                time.sleep(1)
+                win.setBackground("azure1")
+        if btnReset.clicked(clickPoint):
+            cleareEntryPoints(entryText)
+            win.setBackground("azure1")
+        if btnGen.clicked(clickPoint):
+            sudoku.generateSudoku(SudokuDifficultyEnum.pathetic, 100, 2)
+            win.redraw()
+
 
     win.getMouse()
     win.close()
@@ -51,11 +71,18 @@ def fillSudokuFromInput(sudoku, entryPoint):
         for j in range(0, 9):
             if sudoku.getSudokuGrid()[i][j] == 0:
                 cislo = entryPoint[counter].getText()
+                if cislo == "" or not limitNumberEntryCount(cislo, 1):
+                    return False
                 sudoku.getSudokuGrid()[i][j] = int(entryPoint[counter].getText())
                 counter += 1
+    return True
 
+def limitNumberEntryCount(number, n):
+    return len(number) == n;
 
-
+def cleareEntryPoints(entryPoint):
+    for i in range(0, len(entryPoint)):
+        entryPoint[i].setText("")
 
 def setHorLinesForGrid(win):
     line1Hor = Line(Point(30, 25), Point(468, 25))
@@ -126,3 +153,4 @@ def setVerLinesForGrid(win):
     line10Ver.draw(win)
 
 main()
+
