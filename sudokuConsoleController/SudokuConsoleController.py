@@ -38,7 +38,7 @@ class SudokuConsoleController:
                 number = int(input("Select number: "))
                 if self.sudokuControll.isPossible(corCol-1, corRow-1, number):
                     self.sudokuControll.getSudokuGrid()[corCol-1][corRow-1] = number
-                if self.sudokuControll.isSudocuSolved():
+                if self.sudokuControll.checkIfSolved():
                     isFinished = True
                 print()
             print("Congratz, you won, wonna play again ?")

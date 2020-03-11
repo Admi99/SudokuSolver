@@ -158,6 +158,14 @@ class SudokuOperationProvider:
                     return False
         return True
 
+    def checkIfSolved(self, sudokuGrid):
+        for i in range(0, self.sudokuArrLenght):
+            for j in range(0, self.sudokuArrLenght):
+                if sudokuGrid[i][j] != self.solvedSudokuGrid[i][j]:
+                    return False
+        return True
+
+
 
     def _loadAndComputeDiffucultyByChoice(self, difficultyScale):
         limitMin = self.difficultyRangeValue[difficultyScale.value - 1].getPointX1()

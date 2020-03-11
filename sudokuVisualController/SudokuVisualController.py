@@ -7,13 +7,18 @@ from sudokuVisualController.Button import Button
 
 
 def main():
+    difficulty = [SudokuDifficultyEnum.pathetic,
+                  SudokuDifficultyEnum.easy,
+                  SudokuDifficultyEnum.medium,
+                  SudokuDifficultyEnum.hard,
+                  SudokuDifficultyEnum.evil]
+
     sudoku = SudokuOperationProvider()
-    sudoku.generateSudoku(SudokuDifficultyEnum.pathetic, 100, 2)
+    sudoku.generateSudoku(difficulty[0], 100, 2)
 
     gridLenght = 9
     win = GraphWin("Sudoku", 500, 550)
     win.setBackground("azure1")
-
 
     btnCheck = Button(win, Point(67, 515), 70, 40, "Check")
     btnReset = Button(win, Point(150, 515), 70, 40, "Reset")
@@ -24,30 +29,26 @@ def main():
     btnGen.activate()
     btnDiff.activate()
 
-    diffText = Text(Point(415, 515), SudokuDifficultyEnum.pathetic.name)
+    diffText = Text(Point(415, 515), difficulty[0].name)
+    diffText.setStyle("bold")
     diffText.draw(win)
+
 
     setHorLinesForGrid(win)
     setVerLinesForGrid(win)
-    counter = 0
     entryText = []
-    #Je nutne toto umistit do funkce a zavolat po kazdem kliknuti na tlacitko generate
-    for x in range(1, gridLenght + 1):
-        for y in range(1, gridLenght + 1):
-            if sudoku.getSudokuGrid()[x-1][y-1] != 0:
-                message = Text(Point(y * 50, x * 50), sudoku.getSudokuGrid()[x-1][y-1])
-                message.draw(win)
-            else:
-                entryText.append(Entry(Point(y * 50, x * 50), 1))
-                entryText[counter].draw(win)
-                counter += 1
+    labelText = []
 
+    generateGraphics(win, sudoku, entryText,labelText, gridLenght)
+
+    difficultyIndex = 0
     while True:
+        sudokuOrigin = sudoku.getSudokuGridDeepCopy()
         clickPoint = win.getMouse()
         if btnCheck.clicked(clickPoint):
-            if not fillSudokuFromInput(sudoku, entryText):
+            if not fillSudokuFromInput(sudokuOrigin, entryText):
                 continue
-            if sudoku.checkIfSolved():
+            if sudoku.checkIfSolved(sudokuOrigin):
                 win.setBackground("Green")
             else:
                 win.setBackground("Red")
@@ -57,25 +58,59 @@ def main():
             cleareEntryPoints(entryText)
             win.setBackground("azure1")
         if btnGen.clicked(clickPoint):
-            sudoku.generateSudoku(SudokuDifficultyEnum.pathetic, 100, 2)
-            win.redraw()
+            sudoku.generateSudoku(difficulty[difficultyIndex], 100, 2)
+            clearChangingGraphics(win, labelText, entryText)
+            win.setBackground("azure1")
+            generateGraphics(win, sudoku, entryText,labelText, gridLenght)
+        if btnDiff.clicked(clickPoint):
+            if difficultyIndex <= 3:
+                difficultyIndex += 1
+            else:
+                difficultyIndex = 0
+            diffText.setText(difficulty[difficultyIndex].name)
+
 
 
     win.getMouse()
     win.close()
 
+def generateGraphics(win, sudoku, entryText,labelText, gridLength):
+    counterEntry = 0
+    counterLabel = 0
+    for x in range(1, gridLength + 1):
+        for y in range(1, gridLength + 1):
+            if sudoku.getSudokuGrid()[x - 1][y - 1] != 0:
+                labelText.append(Text(Point(y * 50, x * 50), sudoku.getSudokuGrid()[x - 1][y - 1]))
+                labelText[counterLabel].setTextColor("Blue")
+                labelText[counterLabel].setStyle("bold")
+                labelText[counterLabel].draw(win)
+                counterLabel += 1
+            else:
+                entryText.append(Entry(Point(y * 50, x * 50), 1))
+                entryText[counterEntry].draw(win)
+                counterEntry += 1
+
+def clearChangingGraphics(win, labelText, entryText):
+    for item in labelText[:]:
+        item.undraw()
+    for item in entryText[:]:
+        item.undraw()
+    labelText.clear()
+    entryText.clear()
+    win.update()
 
 def fillSudokuFromInput(sudoku, entryPoint):
     counter = 0
     for i in range(0, 9):
         for j in range(0, 9):
-            if sudoku.getSudokuGrid()[i][j] == 0:
+            if sudoku[i][j] == 0:
                 cislo = entryPoint[counter].getText()
                 if cislo == "" or not limitNumberEntryCount(cislo, 1):
                     return False
-                sudoku.getSudokuGrid()[i][j] = int(entryPoint[counter].getText())
+                sudoku[i][j] = int(entryPoint[counter].getText())
                 counter += 1
     return True
+
 
 def limitNumberEntryCount(number, n):
     return len(number) == n;
