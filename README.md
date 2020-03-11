@@ -10,8 +10,15 @@ For solving sudoku, i use adjusted backtracking algoritm. But first there is nee
 
 Next important task was to create playable sudoku from complete one. In this case, i used technique from resource bellow, where is exactly specified, how many cells is left for specific difficulty. For this task i used my algoritm, which iterates every region and randomly deletes one cells. Number of passages is intended by difficulty. Its very basic algoritm, and i will do my best to improve him by other rules from document below, but in conclusion, algoritm is now very effective and can produce very, very hard solutions (tested) where is only one way, to finish them.
 
+5.2.2020
 In this state, library for creating sudoku is finished, very basic console app is produce (mainly for testing), and all effort 
 directs to completion of graphical app for playing sudoku.
+
+11.3.2020
+GUI for sudoku is finished and functional. You now can play sudoku, generate solution by difficulty etc...
+You can see final design on the picture below.
+
+
 
 Resources and inspiration:
 
