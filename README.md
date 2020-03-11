@@ -22,12 +22,15 @@ You can see final design on the picture below.
 
 ![](images/Sdk.png)
 
-
-
 Resources and inspiration:
 
 http://zhangroup.aporc.org/images/files/Paper_3485.pdf
 
+Warning:
+
+This project was created for research purposes a can contain many errors, that may, or may not be repaired in the future.
+
+By the way,
 Sorry for my bad english and imperfections in code, on day, i will fix them :)
 
 
